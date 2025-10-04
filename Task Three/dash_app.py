@@ -6,7 +6,7 @@ import pandas as pd
 app = Dash(__name__)
 
 
-df = pd.read_csv("Task One/soul_foods_pink_morsel_sales.csv")
+df = pd.read_csv("Task Two/soul_foods_pink_morsel_sales.csv")
 df["Date"] = pd.to_datetime(df["Date"])
 df = df.sort_values("Date")
 
